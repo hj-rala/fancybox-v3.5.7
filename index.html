@@ -1,0 +1,50 @@
+<script type="text/javascript" src="jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.fancybox.css">
+
+
+
+<style type="text/css">
+.fancybox-slide--iframe .fancybox-content {width:800px; height:700px;}
+.fancybox-close-small {top:-54px; right:-12px;}
+.fancybox-button {width:50px; height:50px; padding:0;}
+.fancybox-button svg {width:50px; height:50px;}
+.fancybox-button svg path {color:orange;}
+
+@media all and (max-width:750px){
+	.fancybox-slide {padding:50px 20px 20px;}
+	.fancybox-button {width:35px; height:35px;}
+	.fancybox-button svg {width:35px; height:35px;}
+	.fancybox-close-small {top:-40px; right:-8px;}
+}
+</style>
+
+
+
+
+
+<a href="popup.html" data-fancybox data-type="iframe">click</a>
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	
+	$('[data-fancybox]').fancybox({
+		toolbar : false,
+		smallBtn : true,
+		iframe : {
+			preload : false,
+			scrolling: false,
+			 css : {
+				width : '800px',
+				height: '700px'
+			}
+		},
+	});
+
+
+});
+</script>
